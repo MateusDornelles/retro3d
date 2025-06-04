@@ -207,6 +207,18 @@ Compiling with support for SDL requires additional compilation steps. First the 
 
 Compiling with support for the tiny3d render device requires the user to compile with support for C++11 threading (STL). Some systems (Linux with g++) require the user to link against ```pthread``` or else the compilation will fail under the linking stage.
 
+## Examples
+A minimal example showing a sprite is available in `examples/minimal`.
+
+```
+cd examples/minimal
+make
+./minimal_example
+```
+
+Ensure SDL2 development files are installed. Define `RETRO3D_USE_SDL1` instead of `RETRO3D_USE_SDL2` if using SDL1.
+
+
 ## Credits
 
 The images and videos above include content from the following creators:
